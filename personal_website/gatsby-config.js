@@ -28,7 +28,7 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#02aab0`,
         display: `standalone`,
-        icon: 'src/images/favicon.png',
+        icon: 'src/images/favicon.png', // todo: https://favicon.io/favicon-generator/ after theme colors decided
       },
     },
   ],

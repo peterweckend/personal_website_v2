@@ -1,21 +1,18 @@
 import { nanoid } from 'nanoid';
 
-// HEAD DATA
 export const headData = {
-  title: '', // e.g: 'Name | Developer'
-  lang: '', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
+  title: 'Peter Weckend', // todo: make this more dynamic
+  lang: 'en',
+  description: 'Software development portfolio website for Peter Weckend.',
 };
 
-// HERO DATA
 export const heroData = {
-  title: '',
-  name: '',
-  subtitle: '',
-  cta: '',
+  title: 'This is the title',
+  name: 'Peter Weckend',
+  subtitle: 'This is the subtitle',
+  cta: 'Call to action button',
 };
 
-// ABOUT DATA
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne: '',
@@ -24,7 +21,6 @@ export const aboutData = {
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 
-// PROJECTS DATA
 export const projectsData = [
   {
     id: nanoid(),
@@ -55,40 +51,28 @@ export const projectsData = [
   },
 ];
 
-// CONTACT DATA
 export const contactData = {
   cta: '',
   btn: '',
   email: '',
 };
 
-// FOOTER DATA
 export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
+      name: 'envelope',
+      url: 'mailto:peterweckend@gmail.com',
     },
     {
       id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/weckend/',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/peterweckend',
     },
   ],
-};
-
-// Github start/fork buttons
-export const githubButtons = {
-  isEnabled: true, // set to false to disable the GitHub stars/fork buttons
 };
