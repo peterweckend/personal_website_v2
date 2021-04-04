@@ -7,17 +7,18 @@ export const headData = {
 };
 
 export const heroData = {
-  title: 'This is the title',
   name: 'Peter Weckend',
-  subtitle: 'This is the subtitle',
-  cta: 'Call to action button',
+  title: 'Software Developer',
+  subtitle: 'Im a software developer currently working on medical device software for Haemonetics',
+  cta: 'Find out more',
 };
 
 export const aboutData = {
   img: 'profile.jpg',
-  paragraphOne: '',
-  paragraphTwo: '',
-  paragraphThree: '',
+  paragraphOne:
+    'Im a software developer. Currently, I develop medical device software for Haemonetics. ...',
+  paragraphTwo: "I'm formerly a student at the University of Alberta. ...",
+  paragraphThree: 'I also like to rock climb and play music. ...',
   resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
 };
 
@@ -52,9 +53,9 @@ export const projectsData = [
 ];
 
 export const contactData = {
-  cta: '',
-  btn: '',
-  email: '',
+  cta: 'Reach out!',
+  btn: 'Resume',
+  email: 'TBD',
 };
 
 export const footerData = {
