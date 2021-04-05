@@ -1,9 +1,17 @@
 import { nanoid } from 'nanoid';
 
 export const headData = {
-  title: 'Peter Weckend', // todo: make this more dynamic
+  title: 'Peter Weckend', // todo: improve/make this more dynamic
   lang: 'en',
   description: 'Software development portfolio website for Peter Weckend.',
+};
+
+export const navigationBarData = {
+  title: 'Peter Weckend',
+  about: 'About',
+  experience: 'Experience',
+  contact: 'Contact',
+  resume: 'Resume',
 };
 
 export const heroData = {
