@@ -1,37 +1,51 @@
-import React, { useContext } from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import React, { useContext, useState } from 'react';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 
 const NavigationBar = () => {
   const { navigationBar } = useContext(PortfolioContext);
-  const { title, about, experience, contact, resume } = navigationBar; // todo change to use data values
+  const { title, about, experience, contact } = navigationBar; // todo change to use data values, add resume here
+  const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <Navbar className="navigationBar" bg="custom" expand="lg">
-      <Navbar.Brand href="#home">{title}</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
-          <Nav.Link>
-            <Link to="about" smooth duration={500}>
-              {about}
-            </Link>
-          </Nav.Link>
-          <Nav.Link>
-            <Link to="projects" smooth duration={600}>
-              {experience}
-            </Link>
-          </Nav.Link>
-          <Nav.Link>
-            <Link to="contact" smooth duration={700}>
-              {contact}
-            </Link>
-          </Nav.Link>
-          <Nav.Link href="">{resume}</Nav.Link>
-        </Nav>
-      </Navbar.Collapse>
-    </Navbar>
+    <nav>
+      <h1 className="title">{title}</h1>
+      <div
+        className="toggle"
+        navbarOpen={navbarOpen}
+        onKeyDown={() => setNavbarOpen(!navbarOpen)}
+        onClick={() => setNavbarOpen(!navbarOpen)}
+        role="button"
+        tabIndex="0"
+      >
+        {navbarOpen ? <div className="hamburger" open /> : <div />}
+      </div>
+      {navbarOpen ? (
+        <div className="navbox">
+          <Link className="navItem" to="about" smooth duration={500}>
+            {about}
+          </Link>
+          <Link className="navItem" to="projects" smooth duration={600}>
+            {experience}
+          </Link>
+          <Link className="navItem" to="contact" smooth duration={700}>
+            {contact}
+          </Link>
+        </div>
+      ) : (
+        <div className="navbox" open>
+          <Link className="navItem" to="about" smooth duration={500}>
+            {about}
+          </Link>
+          <Link className="navItem" to="projects" smooth duration={600}>
+            {experience}
+          </Link>
+          <Link className="navItem" to="contact" smooth duration={700}>
+            {contact}
+          </Link>
+        </div>
+      )}
+    </nav>
   );
 };
 

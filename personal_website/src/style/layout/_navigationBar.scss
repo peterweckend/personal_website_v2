@@ -1,0 +1,135 @@
+nav {
+  height: 10vh;
+  min-height: 70px;
+  max-height: 90px;
+  display: flex;
+  background-color: $white-color;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding: 0 5vw;
+  z-index: 2;
+  align-self: center;
+  border-bottom: 3px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  // todo: improve gradient
+  border-image-source: linear-gradient(
+    90deg,
+    $theme-yellow 20%,
+    $theme-green 70%,
+    $theme-purple 95%
+  );
+
+  @media (max-width: 768px) {
+    position: sticky;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+  }
+}
+
+.title {
+  color: $primary-color;
+  text-transform: none;
+  align-self: center;
+  cursor: default;
+}
+
+.toggle {
+  display: none;
+  height: 100%;
+  cursor: pointer;
+  padding: 0;
+
+  @media (max-width: 768px) {
+    display: flex;
+  }
+}
+
+.hamburger {
+  background-color: purple;
+  width: 30px;
+  height: 3px;
+  transition: all 0.3s linear;
+  align-self: center;
+  position: relative;
+
+  ::before,
+  ::after {
+    width: 30px;
+    height: 3px;
+    background-color: green;
+    content: '';
+    position: absolute;
+    transition: all 0.3s linear;
+  }
+
+  ::before {
+    top: -10px;
+  }
+
+  ::after {
+    top: 10px;
+  }
+}
+
+.navbox {
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    justify-content: flex-start;
+    padding-top: 10vh;
+    background-color: orange;
+    transition: all 0.3s ease-in;
+    top: 8vh;
+    // left: ${props => (props.open ? "-100%" : "0")};
+  }
+}
+
+.navItem {
+  text-decoration: none;
+  color: $primary-color;
+  display: inline-block;
+  white-space: nowrap;
+  margin: 0 1vw;
+  transition: all 200ms ease-in;
+  position: relative;
+  cursor: pointer;
+
+  :after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: goldenrod;
+    height: 1px;
+    transition: all 0.4s ease-in;
+  }
+
+  :hover {
+    color: goldenrod;
+    ::after {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px 0;
+    font-size: 1.5rem;
+    z-index: 6;
+  }
+}
