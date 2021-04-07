@@ -1,3 +1,12 @@
+.title:hover {
+  color: $secondary-color;
+}
+
+.navItem:hover {
+  transition: none;
+  color: lighten($primary-color, 30%);
+}
+
 nav {
   height: 10vh;
   min-height: 70px;
@@ -15,13 +24,7 @@ nav {
   border-bottom: 3px solid;
   border-image-slice: 1;
   border-width: 2px;
-  // todo: improve gradient
-  border-image-source: linear-gradient(
-    90deg,
-    $theme-yellow 20%,
-    $theme-green 70%,
-    $theme-purple 95%
-  );
+  border-image-source: linear-gradient(90deg, $theme-red 0%, $theme-yellow 60%, $theme-green 100%);
 
   @media (max-width: 768px) {
     position: sticky;
@@ -37,7 +40,7 @@ nav {
   color: $primary-color;
   text-transform: none;
   align-self: center;
-  cursor: default;
+  cursor: pointer;
 }
 
 .toggle {

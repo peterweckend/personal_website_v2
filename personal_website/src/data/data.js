@@ -17,17 +17,20 @@ export const navigationBarData = {
 export const heroData = {
   name: 'Peter Weckend',
   title: 'Software Developer',
-  subtitle: 'Im a software developer currently working on medical device software for Haemonetics',
+  subtitle: "I'm a software developer currently working on medical device software for Haemonetics",
   cta: 'Find out more',
 };
 
 export const aboutData = {
   img: 'profile.jpg',
   paragraphOne:
-    'Im a software developer. Currently, I develop medical device software for Haemonetics. ...',
-  paragraphTwo: "I'm formerly a student at the University of Alberta. ...",
-  paragraphThree: 'I also like to rock climb and play music. ...',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+    "I'm a software developer who loves to learn new things and hit the ground running. Currently, I'm based out of Victoria, BC and I develop medical device software for Haemonetics.",
+  paragraphTwo:
+    'I graduated from the University of Alberta in 2019 and have experience with languages such as Java, C#, Python, HTML, CSS, JavaScript, and Angular.',
+  paragraphThreePreLink: 'I also like to rock climb and',
+  paragraphThreeLinkText: 'play music',
+  paragraphThreePostLink: '.',
+  resume: 'Resume',
 };
 
 export const projectsData = [
