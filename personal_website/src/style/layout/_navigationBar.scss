@@ -55,29 +55,46 @@ nav {
 }
 
 .hamburger {
-  background-color: purple;
+  background-color: $primary-color;
   width: 30px;
   height: 3px;
   transition: all 0.3s linear;
   align-self: center;
   position: relative;
+  transform: inherit;
 
-  ::before,
-  ::after {
+  &::before,
+  &::after {
     width: 30px;
     height: 3px;
-    background-color: green;
+    background-color: $primary-color;
     content: '';
     position: absolute;
     transition: all 0.3s linear;
   }
 
-  ::before {
+  &::before {
     top: -10px;
+    transform: rotate(0deg);
   }
 
-  ::after {
+  &::after {
     top: 10px;
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
+
+.hamburger.open {
+  transform: rotate(-45deg);
+
+  &::before {
+    transform: rotate(90deg) translate(-10px, 0px);
+  }
+
+  &::after {
+    opacity: 0;
+    transform: rotate(90deg);
   }
 }
 
@@ -93,11 +110,15 @@ nav {
     width: 100%;
     justify-content: flex-start;
     padding-top: 10vh;
-    background-color: orange;
+    background-color: $white-color;
     transition: all 0.3s ease-in;
     top: 8vh;
-    // left: ${props => (props.open ? "-100%" : "0")};
+    left: 0;
   }
+}
+
+.navbox.open {
+  left: -100%;
 }
 
 .navItem {

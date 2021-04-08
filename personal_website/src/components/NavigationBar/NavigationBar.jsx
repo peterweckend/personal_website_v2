@@ -8,6 +8,7 @@ const NavigationBar = () => {
   const { title, about, experience, contact, resume } = navigationBar;
   const [navbarOpen, setNavbarOpen] = useState(false);
 
+  // todo: clean up the conditionals below so there's less duplicated code
   return (
     <nav>
       <Link className="title" to="hero" smooth duration={500}>
@@ -21,7 +22,7 @@ const NavigationBar = () => {
         role="button"
         tabIndex="0"
       >
-        {navbarOpen ? <div className="hamburger" open /> : <div />}
+        {navbarOpen ? <div className="hamburger open" /> : <div className="hamburger" />}
       </div>
       {navbarOpen ? (
         <div className="navbox">
@@ -39,7 +40,7 @@ const NavigationBar = () => {
           </a>
         </div>
       ) : (
-        <div className="navbox" open>
+        <div className="navbox open">
           <Link className="navItem" to="about" smooth duration={500} offset={-90}>
             {about}
           </Link>

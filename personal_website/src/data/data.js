@@ -15,14 +15,15 @@ export const navigationBarData = {
 };
 
 export const heroData = {
-  name: 'Peter Weckend',
-  title: 'Software Developer',
-  subtitle: "I'm a software developer currently working on medical device software for Haemonetics",
+  name: "Hi, I'm Peter Weckend",
+  title: '',
+  subtitle:
+    "I'm a Victoria BC based software developer currently creating medical device software for Haemonetics",
   cta: 'Find out more',
 };
 
 export const aboutData = {
-  img: 'profile.jpg',
+  img: 'profile.png',
   paragraphOne:
     "I'm a software developer who loves to learn new things and hit the ground running. Currently, I'm based out of Victoria, BC and I develop medical device software for Haemonetics.",
   paragraphTwo:
@@ -36,37 +37,43 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'haemonetics_logo.png',
+    title: 'Haemonetics - Software Developer',
+    info:
+      'Responsible for the design, coding, testing, and documentation of a variety of medical software using C#, .NET, Java, Angular, PL/SQL, etc. Responsible for overseeing and assigning work to a team of developers as well as leading standups, retrospective, and sprint planning meetings.',
+    info2:
+      'Developed multiple applications used by hospitals and medical centers that manage blood transfusions, plasma donations, diagnostics, inventory, and interconnectivity with third party equipment and software.',
+    url: 'https://www.haemonetics.com/en',
+    urlLinkText: 'Haemonetics.com',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    img: 'albertasat_logo.png',
+    title: 'AlbertaSat - Software Team Member',
+    info:
+      'Contributed to the coding and testing in C of the bootloader for Ex-Alta2, a satellite being built at the University of Alberta as part of the Canadian Space Agency’s CubeSat Project.',
     info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    url: 'https://albertasat.ca/',
+    urlLinkText: 'AlbertaSat.com',
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    img: 'connectify.png',
+    title: 'Connectify Social Media Platform',
+    info:
+      'Created a social media platform using Django as part of a semester-long university group project. ',
+    info2:
+      'Included an API that allowed two-way connectivity with web apps of other groups in the course.',
+    url: 'https://youtu.be/thaDP-9Qz3g',
+    urlLinkText: 'See Demo',
+    repo: 'https://github.com/peterweckend/group-project-cmput404',
   },
 ];
 
 export const contactData = {
-  cta: 'Reach out!',
-  btn: 'Resume',
-  email: 'TBD',
+  cta: "Don't be a stranger, send me an email",
+  btn: 'peterweckend@gmail.com',
+  email: 'mailto:peterweckend@gmail.com',
 };
 
 export const footerData = {
