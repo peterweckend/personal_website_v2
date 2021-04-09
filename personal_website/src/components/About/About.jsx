@@ -49,7 +49,7 @@ const About = () => {
                 <p className="about-wrapper__info-text">{paragraphOne}</p>
                 <p className="about-wrapper__info-text">{paragraphTwo}</p>
                 <p className="about-wrapper__info-text">I also like to rock climb and {link}.</p>
-                <span className="d-flex mt-3">
+                <span className="d-flex mt-3 resumeButton">
                   <a
                     target="_blank"
                     rel="noopener noreferrer"

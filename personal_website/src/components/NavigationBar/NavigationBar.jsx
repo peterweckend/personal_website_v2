@@ -35,7 +35,7 @@ const NavigationBar = () => {
           <Link className="navItem" to="contact" smooth duration={700} offset={-90}>
             {contact}
           </Link>
-          <a target="_blank" rel="noopener noreferrer" className="navItem" href={Pdf}>
+          <a target="_blank" rel="noopener noreferrer" className="navItem resumeLink" href={Pdf}>
             {resume}
           </a>
         </div>
@@ -50,7 +50,7 @@ const NavigationBar = () => {
           <Link className="navItem" to="contact" smooth duration={700} offset={-90}>
             {contact}
           </Link>
-          <a target="_blank" rel="noopener noreferrer" className="navItem" href={Pdf}>
+          <a target="_blank" rel="noopener noreferrer" className="navItem resumeLink" href={Pdf}>
             {resume}
           </a>
         </div>

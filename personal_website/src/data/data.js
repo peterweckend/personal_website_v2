@@ -71,7 +71,7 @@ export const projectsData = [
 ];
 
 export const contactData = {
-  cta: "Don't be a stranger, send me an email",
+  cta: 'Send me an email!',
   btn: 'peterweckend@gmail.com',
   email: 'mailto:peterweckend@gmail.com',
 };

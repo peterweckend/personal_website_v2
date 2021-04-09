@@ -21,7 +21,7 @@ nav {
   padding: 0 5vw;
   z-index: 2;
   align-self: center;
-  border-bottom: 3px solid;
+  border-bottom: solid;
   border-image-slice: 1;
   border-width: 2px;
   border-image-source: linear-gradient(90deg, $theme-red 0%, $theme-yellow 60%, $theme-green 100%);
@@ -156,5 +156,25 @@ nav {
     padding: 20px 0;
     font-size: 1.5rem;
     z-index: 6;
+  }
+}
+
+.navItem.resumeLink {
+  padding: 6px 15px;
+  border: 1px solid $primary-color;
+  color: $white-color;
+  background: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+
+  &:hover {
+    background: $primary-color;
+    border: solid;
+    border-image-slice: 1;
+    border-width: 1px;
+    border-image-source: linear-gradient(
+      90deg,
+      $theme-red 0%,
+      $theme-yellow 60%,
+      $theme-green 100%
+    );
   }
 }

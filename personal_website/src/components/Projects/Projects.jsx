@@ -40,7 +40,7 @@ const Projects = () => {
                     delay={500}
                     distance="30px"
                   >
-                    <div className="project-wrapper__text">
+                    <div className="project-wrapper__text projectText">
                       <h3 className="project-wrapper__text-title">{title}</h3>
                       <div>
                         <p>{info}</p>
@@ -49,7 +49,7 @@ const Projects = () => {
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero"
+                        className="cta-btn cta-btn--hero projectLink"
                         href={url}
                       >
                         {urlLinkText}

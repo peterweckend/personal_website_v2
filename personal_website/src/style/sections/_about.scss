@@ -85,3 +85,9 @@
 .link:hover {
   color: $theme-green;
 }
+
+.resumeButton {
+  @include respond(tab-port) {
+    margin: auto;
+  }
+}
