@@ -22,27 +22,29 @@ const Header = () => {
   }, []);
 
   return (
-    <section id="hero" className="jumbotron">
-      <Container>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-          <h1 className="hero-title">
-            {title || 'Hi, my name is'}{' '}
-            <span className="text-color-main">{name || 'Your Name'}</span>
-            <br />
-            {subtitle || "I'm the Unknown Developer."}
-          </h1>
-        </Fade>
-        <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
-          <p className="hero-cta">
-            <span className="cta-btn cta-btn--hero">
-              <Link to="about" smooth duration={1000}>
-                {cta || 'Know more'}
-              </Link>
-            </span>
-          </p>
-        </Fade>
-      </Container>
-    </section>
+    <div>
+      <section id="hero" className="jumbotron">
+        <Container>
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+            <h1 className="hero-title">
+              <span className="text-color-main">{name}</span>
+              <br />
+              {title}
+            </h1>
+            <p className="hero-subtitle">{subtitle}</p>
+          </Fade>
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <p className="hero-cta">
+              <span className="cta-btn cta-btn--hero">
+                <Link to="about" smooth duration={500} offset={-90}>
+                  {cta} <i className="fa fa-arrow-down fa-inverse" />
+                </Link>
+              </span>
+            </p>
+          </Fade>
+        </Container>
+      </section>
+    </div>
   );
 };
 

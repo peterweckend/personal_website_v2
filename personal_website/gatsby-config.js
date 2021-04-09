@@ -22,11 +22,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Simplefolio`,
-        short_name: `Simplefolio`,
+        name: `Peter Weckend Portfolio Site`,
+        short_name: `Peter Weckend`,
         start_url: `/`,
         background_color: `#fff`,
-        theme_color: `#02aab0`,
+        theme_color: `#37447d`,
         display: `standalone`,
         icon: 'src/images/favicon.png', // todo: https://favicon.io/favicon-generator/ after theme colors decided
       },
