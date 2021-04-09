@@ -23,7 +23,7 @@ nav {
   align-self: center;
   border-bottom: solid;
   border-image-slice: 1;
-  border-width: 2px;
+  border-width: 0 0 2px 0;
   border-image-source: linear-gradient(90deg, $theme-red 0%, $theme-yellow 60%, $theme-green 100%);
 
   @media (max-width: 768px) {

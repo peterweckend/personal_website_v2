@@ -16,9 +16,9 @@ export const navigationBarData = {
 
 export const heroData = {
   name: "Hi, I'm Peter Weckend",
-  title: '',
+  title: "I'm a software developer",
   subtitle:
-    "I'm a Victoria BC based software developer currently creating medical device software for Haemonetics",
+    "I'm a Victoria, BC based full-stack developer. Currently, I create medical device software for Haemonetics",
   cta: 'Find out more',
 };
 
