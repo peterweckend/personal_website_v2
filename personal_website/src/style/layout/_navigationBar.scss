@@ -67,6 +67,7 @@ nav {
   &::after {
     width: 30px;
     height: 3px;
+    right: 0px;
     background-color: $primary-color;
     content: '';
     position: absolute;
@@ -89,7 +90,7 @@ nav {
   transform: rotate(-45deg);
 
   &::before {
-    transform: rotate(90deg) translate(-10px, 0px);
+    transform: rotate(90deg) translate(10px, 0px);
   }
 
   &::after {
