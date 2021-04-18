@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
-import Pdf from '../../documents/Peter.Weckend_Resume(*).pdf';
+import Pdf from '../../documents/Peter_Weckend_Resume.pdf';
 
 const NavigationBar = () => {
   const { navigationBar } = useContext(PortfolioContext);
