@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid';
 
 export const headData = {
-  title: 'Peter Weckend', // todo: improve/make this more dynamic
+  title: 'Peter Weckend',
   lang: 'en',
   description: 'Software development portfolio website for Peter Weckend.',
 };
@@ -16,21 +16,19 @@ export const navigationBarData = {
 
 export const heroData = {
   name: "Hi, I'm Peter Weckend",
-  title: '',
+  title: "I'm a software developer",
   subtitle:
-    "I'm a Victoria BC based software developer currently creating medical device software for Haemonetics",
+    "I'm a full-stack developer with a proven record of delivering performant and maintainable software. When it comes to developing a product, I can work from gathering requirements, to organizing a team, to designing, writing, and testing code - and everything in between.",
   cta: 'Find out more',
 };
 
 export const aboutData = {
   img: 'profile.png',
   paragraphOne:
-    "I'm a software developer who loves to learn new things and hit the ground running. Currently, I'm based out of Victoria, BC and I develop medical device software for Haemonetics.",
+    "I'm a software developer who loves to learn, write quality code, and collaborate with others. The languages I work with most frequently are C#, Java, Python, SQL, HTML, CSS, JavaScript, and Angular.",
   paragraphTwo:
-    'I graduated from the University of Alberta in 2019 and have experience with languages such as Java, C#, Python, HTML, CSS, JavaScript, and Angular.',
-  paragraphThreePreLink: 'I also like to rock climb and',
-  paragraphThreeLinkText: 'play music',
-  paragraphThreePostLink: '.',
+    'After initially going to university for a degree in mathematics, I accidentally discovered the joys of programming in an Intro to Computing Science options course and immediately switched my major. In the years since then, I graduated from the University of Alberta with a degree in Computing Science, written software for multiple products, and currently work as a developer / team lead for Haemonetics.',
+  paragraphThreeLinkText: 'playing piano',
   resume: 'Resume',
 };
 
@@ -71,7 +69,7 @@ export const projectsData = [
 ];
 
 export const contactData = {
-  cta: 'Send me an email!',
+  cta: "I'm always happy to meet new people, so feel free to send me an email",
   btn: 'peterweckend@gmail.com',
   email: 'mailto:peterweckend@gmail.com',
 };

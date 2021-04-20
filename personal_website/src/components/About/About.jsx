@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
-import Pdf from '../../documents/Peter.Weckend_Resume(*).pdf';
+import Pdf from '../../documents/Peter_Weckend_Resume.pdf';
 import Video from '../../documents/i_play_piano.mp4';
 
 const About = () => {
@@ -27,7 +27,7 @@ const About = () => {
   // todo: find a more elegant way of doing this
   const link = (
     <a target="_blank" rel="noopener noreferrer" className="link" href={Video}>
-      {paragraphThreeLinkText}.
+      {paragraphThreeLinkText}
     </a>
   );
 
@@ -48,7 +48,9 @@ const About = () => {
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">{paragraphOne}</p>
                 <p className="about-wrapper__info-text">{paragraphTwo}</p>
-                <p className="about-wrapper__info-text">I also like to rock climb and {link}.</p>
+                <p className="about-wrapper__info-text">
+                  When I&apos;m not coding, I spend my free time travelling, bouldering, and {link}.
+                </p>
                 <span className="d-flex mt-3 resumeButton">
                   <a
                     target="_blank"
