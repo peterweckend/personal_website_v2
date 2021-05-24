@@ -49,7 +49,9 @@ const About = () => {
                 <p className="about-wrapper__info-text">{paragraphOne}</p>
                 <p className="about-wrapper__info-text">{paragraphTwo}</p>
                 <p className="about-wrapper__info-text">
-                  When I&apos;m not coding, I spend my free time travelling, bouldering, and {link}.
+                  I love to play around with code - currently I&apos;m sharpening my skills with
+                  React, GraphQL, and Swift. When I&apos;m not coding, I spend my free time
+                  travelling, bouldering, and {link}.
                 </p>
                 <span className="d-flex mt-3 resumeButton">
                   <a
