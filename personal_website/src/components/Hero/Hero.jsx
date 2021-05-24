@@ -6,7 +6,7 @@ import PortfolioContext from '../../context/context';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  const { title, name, cta } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -27,11 +27,21 @@ const Header = () => {
         <Container>
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
             <h1 className="hero-title">
-              <span className="text-color-main">{name}</span>
+              <span data-heading={name} id="hero-introduction">
+                {name}
+              </span>
               <br />
               {title}
             </h1>
-            <p className="hero-subtitle">{subtitle}</p>
+            <p className="hero-subtitle">
+              I&apos;m a full-stack developer with{' '}
+              <span className="simple-highlight highlight-red">a proven record</span> of delivering
+              performant and <span className="simple-highlight highlight-green">maintainable</span>{' '}
+              software. When it comes to developing a product, I can work from gathering{' '}
+              <span className="simple-highlight highlight-yellow">requirements</span>, to organizing
+              a team, to designing, writing, and testing code -{' '}
+              <span className="simple-highlight highlight-purple">and everything in between</span>.
+            </p>
           </Fade>
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
             <p className="hero-cta">

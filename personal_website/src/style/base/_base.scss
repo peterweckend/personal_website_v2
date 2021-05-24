@@ -6,3 +6,38 @@ body {
   font-family: 'Raleway', sans-serif;
   text-align: center;
 }
+
+.simple-highlight {
+  padding: 0.1em 0.2em;
+  background-repeat: no-repeat !important;
+  background-size: 100% 80% !important;
+  background-position: 0 100% !important;
+}
+
+.highlight-red {
+  background: linear-gradient(120deg, lighten($theme-red, 14%) 40%, lighten($theme-red, 20%) 100%);
+}
+
+.highlight-green {
+  background: linear-gradient(
+    120deg,
+    lighten($theme-green, 14%) 40%,
+    lighten($theme-green, 20%) 100%
+  );
+}
+
+.highlight-yellow {
+  background: linear-gradient(
+    120deg,
+    lighten($theme-yellow, 14%) 40%,
+    lighten($theme-yellow, 20%) 100%
+  );
+}
+
+.highlight-purple {
+  background: linear-gradient(
+    120deg,
+    lighten($theme-purple, 14%) 40%,
+    lighten($theme-purple, 20%) 100%
+  );
+}
