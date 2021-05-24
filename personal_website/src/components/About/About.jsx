@@ -47,12 +47,15 @@ const About = () => {
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">{paragraphOne}</p>
+                <br />
                 <p className="about-wrapper__info-text">{paragraphTwo}</p>
+                <br />
                 <p className="about-wrapper__info-text">
                   I love to play around with code - currently I&apos;m sharpening my skills with
                   React, GraphQL, and Swift. When I&apos;m not coding, I spend my free time
                   travelling, bouldering, and {link}.
                 </p>
+                <br />
                 <span className="d-flex mt-3 resumeButton">
                   <a
                     target="_blank"

@@ -82,6 +82,7 @@ const Projects = () => {
                         <p>{info}</p>
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
+                      <br />
                       <a
                         target="_blank"
                         rel="noopener noreferrer"
@@ -101,6 +102,7 @@ const Projects = () => {
                           Source Code
                         </a>
                       )}
+                      <br />
                     </div>
                   </Fade>
                 </Col>

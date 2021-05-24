@@ -81,7 +81,7 @@ export const projectsData = [
 ];
 
 export const contactData = {
-  cta: "I'm always happy to meet new people, so feel free to send me an email",
+  cta: 'I love meeting new people, send me an email',
   btn: 'peterweckend@gmail.com',
   email: 'mailto:peterweckend@gmail.com',
 };

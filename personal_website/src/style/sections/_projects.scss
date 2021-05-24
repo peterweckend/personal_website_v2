@@ -83,5 +83,8 @@
 .projectText {
   @include respond(tab-port) {
     text-align: center !important;
+    p {
+      text-align: left !important;
+    }
   }
 }
