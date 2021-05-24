@@ -16,9 +16,7 @@ export const navigationBarData = {
 
 export const heroData = {
   name: "Hi, I'm Peter Weckend",
-  title: "I'm a software developer",
-  subtitle:
-    "I'm a full-stack developer with a proven record of delivering performant and maintainable software. When it comes to developing a product, I can work from gathering requirements, to organizing a team, to designing, writing, and testing code - and everything in between.",
+  title: 'I love to create software',
   cta: 'Find out more',
 };
 
