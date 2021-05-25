@@ -74,9 +74,12 @@
   }
 }
 
-.link {
+.emphasized {
   font-weight: bold;
   color: $theme-yellow;
+}
+
+.link {
   text-decoration: underline !important;
 }
 

@@ -42,7 +42,7 @@ const Header = () => {
             </p>
           </Fade>
           <br />
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
             <p className="hero-cta">
               <span className="cta-btn cta-btn--hero">
                 <Link to="about" offset={-50} smooth duration={500}>

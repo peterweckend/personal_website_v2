@@ -23,10 +23,14 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.png',
   paragraphOne:
-    "I'm a software developer who loves to learn, create, and collaborate with others. The languages I work with most frequently are C#, Java, Python, SQL, HTML, CSS, JavaScript, and Angular.",
+    "I'm a software developer who loves to learn, create, and collaborate with others. The languages I work with most frequently are: ",
   paragraphTwo:
-    "While I originally started university as a math major, I quickly discovered the joys of computer science and haven't looked back. In the years since then, I graduated from the University of Alberta with a degree in Computer Science, have written software for multiple products, and currently work as a developer / team lead for Haemonetics.",
-  paragraphThreeLinkText: 'playing piano',
+    "While I originally started university as a math major, I quickly discovered the joys of computer science and haven't looked back. In the years since, I graduated from the ",
+  universityLinkText: 'University of Alberta',
+  universityUrl: 'https://www.ualberta.ca/index.html',
+  paragraphThree:
+    ' with a degree in Computer Science, have written software for multiple products, and currently work as a developer / team lead for Haemonetics.',
+  paragraphFourLinkText: 'playing piano',
   resume: 'Resume',
 };
 
