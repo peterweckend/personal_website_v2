@@ -45,6 +45,8 @@ export const projectsData = [
       "During my time at Haemonetics, I've worked on a variety of applications used by hospitals and medical centers that manage blood transfusions, plasma donations, diagnostics, inventory, and interconnectivity with third party equipment and more.",
     url: 'https://www.haemonetics.com/en',
     urlLinkText: 'Haemonetics.com',
+    highlight: 'C#, .NET, Java, Angular, PL/SQL',
+    highlightClassName: 'simple-highlight highlight-yellow',
   },
   {
     id: nanoid(),
@@ -55,18 +57,22 @@ export const projectsData = [
     info2: '',
     url: 'https://albertasat.ca/',
     urlLinkText: 'AlbertaSat.com',
+    highlight: 'coding and testing in C',
+    highlightClassName: 'simple-highlight highlight-green',
   },
   {
     id: nanoid(),
     img: 'RestaurantDetailsScreen.png',
     title: 'FoodFriendly',
     info:
-      'An MVP iOS social media app that allows vegetarians and vegans to search for and review compatible menu items of restaurants in their area',
+      'An MVP iOS social media app that allows vegetarians and vegans to search for and review compatible menu items of restaurants in their area. This application was a really fun way to learn more about Swift, Firebase, and iOS development as a whole.',
     info2:
-      'This application was a really fun way to learn more about Swift, Firebase, and iOS development as a whole. FoodFriendly users can create accounts, find and view restaurants, review menu items, and more.',
+      'FoodFriendly users can create accounts, find and view restaurants, review menu items, and more.',
     url: 'https://youtu.be/CpdDrbAIb2Y',
     urlLinkText: 'See Demo',
     repo: 'https://github.com/peterweckend/FoodFriendly',
+    highlight: 'Swift, Firebase, and iOS',
+    highlightClassName: 'simple-highlight highlight-yellow',
   },
   {
     id: nanoid(),
@@ -79,6 +85,8 @@ export const projectsData = [
     url: 'https://youtu.be/thaDP-9Qz3g',
     urlLinkText: 'See Demo',
     repo: 'https://github.com/peterweckend/group-project-cmput404',
+    highlight: 'Django',
+    highlightClassName: 'simple-highlight highlight-red',
   },
 ];
 
