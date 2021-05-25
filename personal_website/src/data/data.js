@@ -23,9 +23,9 @@ export const heroData = {
 export const aboutData = {
   img: 'profile.png',
   paragraphOne:
-    "I'm a software developer who loves to learn, write quality code, and collaborate with others. The languages I work with most frequently are C#, Java, Python, SQL, HTML, CSS, JavaScript, and Angular.",
+    "I'm a software developer who loves to learn, create, and collaborate with others. The languages I work with most frequently are C#, Java, Python, SQL, HTML, CSS, JavaScript, and Angular.",
   paragraphTwo:
-    'After initially going to university for a degree in mathematics, I accidentally discovered the joys of programming in an options course and immediately switched my major. In the years since then, I graduated from the University of Alberta with a degree in Computing Science, havewritten software for multiple products, and currently work as a developer / team lead for Haemonetics.',
+    "While I originally started university as a math major, I quickly discovered the joys of computer science and haven't looked back. In the years since then, I graduated from the University of Alberta with a degree in Computer Science, have written software for multiple products, and currently work as a developer / team lead for Haemonetics.",
   paragraphThreeLinkText: 'playing piano',
   resume: 'Resume',
 };
@@ -79,7 +79,7 @@ export const projectsData = [
 ];
 
 export const contactData = {
-  cta: 'I love meeting new people, send me an email',
+  cta: 'I love meeting new people - send me an email!',
   btn: 'peterweckend@gmail.com',
   email: 'mailto:peterweckend@gmail.com',
 };

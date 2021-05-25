@@ -16,8 +16,6 @@
   background: url('assets/background.png');
   background-position: center;
   background-size: cover;
-  // overflow: auto;
-  // position: relative;
 
   @include respond(phone) {
     margin-top: -20%;
@@ -83,34 +81,3 @@
     }
   }
 }
-
-// #hero-introduction {
-//   width: 100%;
-//   margin: 0 auto;
-//   height: 100%;
-//   position: relative;
-//   color: $bg;
-//   text-transform: uppercase;
-//   width: 100%;
-//   text-align: center;
-//   text-shadow: -1px -1px 0 $primary-color, 1px -1px 0 $primary-color, -1px 1px 0 $primary-color,
-//     1px 1px 0 $primary-color;
-
-//   &:before {
-//     content: attr(data-heading);
-//     position: absolute;
-//     z-index: 5;
-//     color: $theme-red;
-//     transform: translate(0.1vw);
-//     mix-blend-mode: darken;
-//     text-align: center;
-//     width: 100%;
-//     text-shadow: 1px 0px 0px darken($theme-indigo, 20%), 0px 1px 0px $primary-color,
-//       2px 1px 0px darken($theme-indigo, 20%), 1px 2px 0px $primary-color,
-//       3px 2px 0px darken($theme-indigo, 20%), 2px 3px 0px $primary-color,
-//       4px 3px 0px darken($theme-indigo, 20%), 3px 4px 0px $primary-color,
-//       5px 4px 0px darken($theme-indigo, 20%), 4px 5px 0px $primary-color,
-//       6px 5px 0px darken($theme-indigo, 20%), 5px 6px 0px $primary-color,
-//       7px 6px 0px darken($theme-indigo, 20%);
-//   }
-// }

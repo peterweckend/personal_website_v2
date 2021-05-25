@@ -76,12 +76,12 @@
 
 .link {
   font-weight: bold;
-  color: $white-color;
+  color: $theme-yellow;
   text-decoration: underline !important;
 }
 
 .link:hover {
-  color: $theme-green;
+  color: $white-color;
 }
 
 .resumeButton {

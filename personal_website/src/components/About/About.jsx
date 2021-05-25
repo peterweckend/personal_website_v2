@@ -53,7 +53,7 @@ const About = () => {
                 <p className="about-wrapper__info-text">
                   I love to play around with code - currently I&apos;m sharpening my skills with
                   React, GraphQL, and Swift. When I&apos;m not coding, I spend my free time
-                  travelling, bouldering, and {link}.
+                  travelling, bouldering, teaching music, and {link}.
                 </p>
                 <br />
                 <span className="d-flex mt-3 resumeButton">
