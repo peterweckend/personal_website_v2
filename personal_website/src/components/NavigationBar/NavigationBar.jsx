@@ -1,5 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-scroll';
+import Helmet from 'react-helmet';
 import PortfolioContext from '../../context/context';
 import Pdf from '../../documents/Peter_Weckend_Resume.pdf';
 
@@ -15,6 +16,9 @@ const NavigationBar = () => {
   // todo: clean up the conditionals below so there's less duplicated code
   return (
     <nav>
+      <Helmet>
+        <body className={navbaropen ? 'freeze' : ''} />
+      </Helmet>
       <Link className="title" to="hero" smooth duration={500}>
         <h1>{title}</h1>
       </Link>
@@ -32,30 +36,30 @@ const NavigationBar = () => {
           <Link
             className="navItem"
             to="about"
+            offset={-50}
             onClick={navbarLinkHandler}
             smooth
             duration={500}
-            offset={-90}
           >
             {about}
           </Link>
           <Link
             className="navItem"
             to="projects"
+            offset={-50}
             onClick={navbarLinkHandler}
             smooth
             duration={600}
-            offset={-90}
           >
             {experience}
           </Link>
           <Link
             className="navItem"
             to="contact"
+            offset={-50}
             onClick={navbarLinkHandler}
             smooth
             duration={700}
-            offset={-90}
           >
             {contact}
           </Link>
@@ -74,30 +78,30 @@ const NavigationBar = () => {
           <Link
             className="navItem"
             to="about"
+            offset={-90}
             onClick={navbarLinkHandler}
             smooth
             duration={500}
-            offset={-90}
           >
             {about}
           </Link>
           <Link
             className="navItem"
             to="projects"
+            offset={-90}
             onClick={navbarLinkHandler}
             smooth
             duration={600}
-            offset={-90}
           >
             {experience}
           </Link>
           <Link
             className="navItem"
             to="contact"
+            offset={-90}
             onClick={navbarLinkHandler}
             smooth
             duration={700}
-            offset={-90}
           >
             {contact}
           </Link>
