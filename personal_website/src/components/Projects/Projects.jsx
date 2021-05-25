@@ -32,42 +32,6 @@ const Projects = () => {
 
             return (
               <Row key={id}>
-                <Col lg={8} sm={12}>
-                  <Fade
-                    left={isDesktop}
-                    bottom={isMobile}
-                    duration={1000}
-                    delay={500}
-                    distance="30px"
-                  >
-                    <div className="project-wrapper__text projectText">
-                      <h3 className="project-wrapper__text-title">{title}</h3>
-                      <div>
-                        <p>{info}</p>
-                        <p className="mb-4">{info2 || ''}</p>
-                      </div>
-                      <a
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="cta-btn cta-btn--hero projectLink"
-                        href={url}
-                      >
-                        {urlLinkText}
-                      </a>
-
-                      {repo && (
-                        <a
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cta-btn text-color-main"
-                          href={repo}
-                        >
-                          Source Code
-                        </a>
-                      )}
-                    </div>
-                  </Fade>
-                </Col>
                 <Col lg={4} sm={12}>
                   <Fade
                     right={isDesktop}
@@ -101,6 +65,44 @@ const Projects = () => {
                           </div>
                         </Tilt>
                       </a>
+                    </div>
+                  </Fade>
+                </Col>
+                <Col lg={8} sm={12}>
+                  <Fade
+                    left={isDesktop}
+                    bottom={isMobile}
+                    duration={1000}
+                    delay={500}
+                    distance="30px"
+                  >
+                    <div className="project-wrapper__text projectText">
+                      <h3 className="project-wrapper__text-title">{title}</h3>
+                      <div>
+                        <p>{info}</p>
+                        <p className="mb-4">{info2 || ''}</p>
+                      </div>
+                      <br />
+                      <a
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="cta-btn cta-btn--hero projectLink"
+                        href={url}
+                      >
+                        {urlLinkText}
+                      </a>
+
+                      {repo && (
+                        <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn text-color-main"
+                          href={repo}
+                        >
+                          Source Code
+                        </a>
+                      )}
+                      <br />
                     </div>
                   </Fade>
                 </Col>

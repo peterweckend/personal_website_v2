@@ -6,7 +6,7 @@ import PortfolioContext from '../../context/context';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  const { title, name, cta } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -27,16 +27,25 @@ const Header = () => {
         <Container>
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
             <h1 className="hero-title">
-              <span className="text-color-main">{name}</span>
+              <span className="text-color-main" data-heading={name} id="hero-introduction">
+                {name}
+              </span>
               <br />
               {title}
             </h1>
-            <p className="hero-subtitle">{subtitle}</p>
+            <p className="hero-subtitle">
+              I&apos;m a full-stack{' '}
+              <span className="simple-highlight highlight-red">software developer</span> with with a
+              passion for learning and experience in a variety of software projects. Currently, I
+              work at <span className="simple-highlight highlight-yellow">Haemonetics</span>, where
+              I write hospital medical software.
+            </p>
           </Fade>
+          <br />
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
             <p className="hero-cta">
               <span className="cta-btn cta-btn--hero">
-                <Link to="about" smooth duration={500} offset={-90}>
+                <Link to="about" offset={-50} smooth duration={500}>
                   {cta} <i className="fa fa-arrow-down fa-inverse" />
                 </Link>
               </span>
