@@ -63,7 +63,7 @@ const NavigationBar = () => {
             target="_blank"
             rel="noopener noreferrer"
             onClick={navbarLinkHandler}
-            className="navItem resumeLink"
+            className="navItem resumeLink openResumeLink"
             href={Pdf}
           >
             {resume}

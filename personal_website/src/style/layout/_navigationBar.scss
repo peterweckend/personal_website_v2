@@ -45,6 +45,7 @@ nav {
 
 .toggle {
   display: none;
+  outline: none; // I made sure that visual feedback still occurs on focus despite this :)
   height: 100%;
   cursor: pointer;
   padding: 0;
@@ -155,7 +156,7 @@ nav {
 
   @media (max-width: 768px) {
     padding: 20px 0;
-    font-size: 1.5rem;
+    font-size: 2rem;
     z-index: 6;
   }
 }
@@ -178,4 +179,8 @@ nav {
       $theme-green 100%
     );
   }
+}
+
+.openResumeLink {
+  margin-top: 20px;
 }
