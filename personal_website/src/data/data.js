@@ -15,7 +15,7 @@ export const navigationBarData = {
 };
 
 export const heroData = {
-  name: "Hi, I'm Peter Weckend",
+  nameIntro: "Hi, I'm Peter Weckend",
   title: 'I love to create software',
   cta: 'Find out more',
 };
