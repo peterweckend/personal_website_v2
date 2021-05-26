@@ -2,9 +2,40 @@ import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
+import PropTypes from 'prop-types';
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 import ProjectImg from '../Image/ProjectImg';
+
+const Highlighted = ({ text = '', highlight = '', highlightClassName = '' }) => {
+  if (!highlight.trim()) {
+    return <span>{text}</span>;
+  }
+  const regex = new RegExp(`(${highlight})`, 'gi');
+  const parts = text.split(regex);
+  return (
+    <p>
+      {parts
+        .filter((part) => part)
+        // safe to use key=part here - the text is essentially static and I feel
+        // doing something like generating a unique ID in this situation is overkill
+        .map((part) =>
+          regex.test(part) ? (
+            <span className={highlightClassName} key={part}>
+              {part}
+            </span>
+          ) : (
+            <span key={part}>{part}</span>
+          )
+        )}
+    </p>
+  );
+};
+Highlighted.propTypes = {
+  text: PropTypes.string,
+  highlight: PropTypes.string,
+  highlightClassName: PropTypes.string,
+};
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -28,7 +59,18 @@ const Projects = () => {
         <div className="project-wrapper">
           <Title title="Experience" />
           {projects.map((project) => {
-            const { title, info, info2, url, urlLinkText, repo, img, id } = project;
+            const {
+              title,
+              info,
+              info2,
+              url,
+              urlLinkText,
+              repo,
+              img,
+              id,
+              highlight,
+              highlightClassName,
+            } = project;
 
             return (
               <Row key={id}>
@@ -36,8 +78,8 @@ const Projects = () => {
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
+                    duration={400}
+                    delay={400}
                     distance="30px"
                   >
                     <div className="project-wrapper__image">
@@ -72,14 +114,18 @@ const Projects = () => {
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
-                    duration={1000}
-                    delay={500}
+                    duration={400}
+                    delay={200}
                     distance="30px"
                   >
                     <div className="project-wrapper__text projectText">
                       <h3 className="project-wrapper__text-title">{title}</h3>
                       <div>
-                        <p>{info}</p>
+                        <Highlighted
+                          text={info}
+                          highlight={highlight}
+                          highlightClassName={highlightClassName}
+                        />
                         <p className="mb-4">{info2 || ''}</p>
                       </div>
                       <br />

@@ -9,7 +9,16 @@ import Video from '../../documents/i_play_piano.mp4';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThreeLinkText, resume } = about;
+  const {
+    img,
+    paragraphOne,
+    paragraphTwo,
+    universityLinkText,
+    universityUrl,
+    paragraphThree,
+    paragraphFourLinkText,
+    resume,
+  } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -25,9 +34,15 @@ const About = () => {
   }, []);
 
   // todo: find a more elegant way of doing this
-  const link = (
-    <a target="_blank" rel="noopener noreferrer" className="link" href={Video}>
-      {paragraphThreeLinkText}
+  const pianoLink = (
+    <a target="_blank" rel="noopener noreferrer" className="link emphasized" href={Video}>
+      {paragraphFourLinkText}
+    </a>
+  );
+
+  const universityLink = (
+    <a target="_blank" rel="noopener noreferrer" className="link emphasized" href={universityUrl}>
+      {universityLinkText}
     </a>
   );
 
@@ -37,23 +52,33 @@ const About = () => {
         <Title title="About Me" />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
-            <Fade bottom duration={1000} delay={600} distance="30px">
+            <Fade bottom duration={250} delay={150} distance="30px">
               <div className="about-wrapper__image">
                 <AboutImg alt="profile picture" filename={img} />
               </div>
             </Fade>
           </Col>
           <Col md={6} sm={12}>
-            <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+            <Fade left={isDesktop} bottom={isMobile} duration={250} delay={250} distance="30px">
               <div className="about-wrapper__info">
-                <p className="about-wrapper__info-text">{paragraphOne}</p>
+                <p className="about-wrapper__info-text">
+                  {paragraphOne}
+                  <span className="emphasized">
+                    C#, Java, Python, SQL, HTML, CSS, JavaScript, and Angular
+                  </span>
+                  .
+                </p>
                 <br />
-                <p className="about-wrapper__info-text">{paragraphTwo}</p>
+                <p className="about-wrapper__info-text">
+                  {paragraphTwo}
+                  {universityLink}
+                  {paragraphThree}
+                </p>
                 <br />
                 <p className="about-wrapper__info-text">
                   I love to play around with code - currently I&apos;m sharpening my skills with
                   React, GraphQL, and Swift. When I&apos;m not coding, I spend my free time
-                  travelling, bouldering, teaching music, and {link}.
+                  travelling, bouldering, teaching music, and {pianoLink}.
                 </p>
                 <br />
                 <span className="d-flex mt-3 resumeButton">

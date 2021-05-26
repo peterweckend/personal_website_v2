@@ -18,7 +18,7 @@
   background-size: cover;
 
   @include respond(phone) {
-    margin-top: -20%;
+    margin-top: -15%;
     padding: 0rem $default-font-size;
   }
 
@@ -47,7 +47,6 @@
   .hero-subtitle {
     text-align: left;
     font-size: 2rem;
-    margin-bottom: 3rem;
 
     @include respond(tab-land) {
       font-size: 2.5rem;
@@ -74,10 +73,45 @@
 
     & a {
       font-size: 2.4rem;
+      padding-left: 4px;
 
       @include respond(phone) {
         font-size: 2rem;
       }
+    }
+  }
+}
+
+.hero-social-links {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+
+  @include respond(tab-port) {
+    justify-content: center;
+  }
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(135deg, $primary-color 0%, $secondary-color 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+    margin: $default-font-size $default-font-size;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+
+    // Responsive text purple style
+    @include respond(phone) {
+      background-image: none;
+      -webkit-text-fill-color: $secondary-color;
     }
   }
 }

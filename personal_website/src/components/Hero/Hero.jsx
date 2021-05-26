@@ -6,7 +6,9 @@ import PortfolioContext from '../../context/context';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, cta } = hero;
+  const { title, nameIntro, cta } = hero;
+  const { footer } = useContext(PortfolioContext);
+  const { networks } = footer;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -27,26 +29,41 @@ const Header = () => {
         <Container>
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
             <h1 className="hero-title">
-              <span className="text-color-main" data-heading={name} id="hero-introduction">
-                {name}
+              <span className="text-color-main" data-heading={nameIntro} id="hero-introduction">
+                {nameIntro}
               </span>
               <br />
               {title}
             </h1>
             <p className="hero-subtitle">
-              I&apos;m a full-stack{' '}
-              <span className="simple-highlight highlight-red">software developer</span> with with a
-              passion for learning and experience in a variety of software projects. Currently, I
-              work at <span className="simple-highlight highlight-yellow">Haemonetics</span>, where
-              I write hospital medical software.
+              I&apos;m a full-stack developer with a passion for learning and collaboration.
+              Currently I work at{' '}
+              <span className="simple-highlight highlight-yellow">Haemonetics</span> where I&apos;m
+              focused on creating quality, performant medical software for hospitals.
             </p>
           </Fade>
-          <br />
-          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+          <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
+            <div className="hero-social-links">
+              {networks &&
+                networks.map((network) => {
+                  const { id, name, url } = network;
+                  return (
+                    <a
+                      key={id}
+                      href={url}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      aria-label={name}
+                    >
+                      <i className={`fa fa-${name}`} />
+                    </a>
+                  );
+                })}
+            </div>
             <p className="hero-cta">
               <span className="cta-btn cta-btn--hero">
                 <Link to="about" offset={-50} smooth duration={500}>
-                  {cta} <i className="fa fa-arrow-down fa-inverse" />
+                  {cta} <i className="fa fa-arrow-down" />
                 </Link>
               </span>
             </p>
