@@ -36,11 +36,10 @@ const Header = () => {
               {title}
             </h1>
             <p className="hero-subtitle">
-              I&apos;m a full-stack{' '}
-              <span className="simple-highlight highlight-red">software developer</span> with with a
-              passion for learning and experience in a variety of software projects. Currently, I
-              work at <span className="simple-highlight highlight-yellow">Haemonetics</span>, where
-              I write hospital medical software.
+              I&apos;m a full-stack developer with a passion for learning and collaboration.
+              Currently I work at{' '}
+              <span className="simple-highlight highlight-yellow">Haemonetics</span> where I&apos;m
+              focused on creating quality, performant medical software for hospitals.
             </p>
           </Fade>
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
@@ -64,7 +63,7 @@ const Header = () => {
             <p className="hero-cta">
               <span className="cta-btn cta-btn--hero">
                 <Link to="about" offset={-50} smooth duration={500}>
-                  {cta} <i className="fa fa-arrow-down fa-inverse" />
+                  {cta} <i className="fa fa-arrow-down" />
                 </Link>
               </span>
             </p>

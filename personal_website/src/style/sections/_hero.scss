@@ -73,6 +73,7 @@
 
     & a {
       font-size: 2.4rem;
+      padding-left: 4px;
 
       @include respond(phone) {
         font-size: 2rem;
