@@ -29,7 +29,7 @@ export const aboutData = {
   universityLinkText: 'University of Alberta',
   universityUrl: 'https://www.ualberta.ca/index.html',
   paragraphThree:
-    ' with a BSc in Computer Science, have written software for multiple products, and currently work as a developer / team lead for Haemonetics.',
+    ' with a BSc in Computer Science, have written software for multiple products, and currently work as a developer at Dotdash.',
   paragraphFourLinkText: 'playing piano',
   resume: 'Resume',
 };
@@ -40,7 +40,7 @@ export const projectsData = [
     img: 'haemonetics_logo.png',
     title: 'Haemonetics - Software Developer',
     info:
-      'Currently at Haemonetics, I work on the design, coding, testing, and documentation of a variety of medical software using C#, .NET, Java, Angular, PL/SQL, etc. In addition to this, I oversee and assign work to a team of developers and lead standups, retrospectives, and sprint planning meetings.',
+      'I worked on the design, coding, testing, and documentation of a variety of medical software using C#, .NET, Java, Angular, PL/SQL, etc. In addition to this, I oversaw and assigned work to a team of developers and lead standups, retrospectives, and sprint planning meetings.',
     info2:
       "During my time at Haemonetics, I've worked on a variety of applications used by hospitals and medical centers that manage blood transfusions, plasma donations, diagnostics, inventory, and interconnectivity with third party equipment and more.",
     url: 'https://www.haemonetics.com/en',
