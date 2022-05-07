@@ -14,8 +14,10 @@ const About = () => {
     paragraphOne,
     paragraphTwo,
     universityLinkText,
-    universityUrl,
+    universityLinkUrl,
     paragraphThree,
+    employerLinkText,
+    employerLinkUrl,
     paragraphFourLinkText,
     resume,
   } = about;
@@ -41,8 +43,14 @@ const About = () => {
   );
 
   const universityLink = (
-    <a target="_blank" rel="noopener noreferrer" className="link emphasized" href={universityUrl}>
+    <a target="_blank" rel="noopener noreferrer" className="link emphasized" href={universityLinkUrl}>
       {universityLinkText}
+    </a>
+  );
+
+  const employerLink = (
+    <a target="_blank" rel="noopener noreferrer" className="link emphasized" href={employerLinkUrl}>
+      {employerLinkText}
     </a>
   );
 
@@ -73,6 +81,7 @@ const About = () => {
                   {paragraphTwo}
                   {universityLink}
                   {paragraphThree}
+                  {employerLink}
                 </p>
                 <br />
                 <p className="about-wrapper__info-text">

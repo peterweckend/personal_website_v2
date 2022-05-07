@@ -27,9 +27,11 @@ export const aboutData = {
   paragraphTwo:
     "While I originally started university as a math major, I quickly discovered the joys of computer science and haven't looked back. In the years since, I graduated from the ",
   universityLinkText: 'University of Alberta',
-  universityUrl: 'https://www.ualberta.ca/index.html',
+  universityLinkUrl: 'https://www.ualberta.ca/index.html',
   paragraphThree:
-    ' with a BSc in Computer Science, have written software for multiple products, and currently work as a developer at Dotdash.',
+    ' with a BSc in Computer Science, have written software for multiple products, and currently work as a developer at ',
+  employerLinkText: 'Dotdash Meredith.',
+  employerLinkUrl: 'https://www.dotdashmeredith.com',
   paragraphFourLinkText: 'playing piano',
   resume: 'Resume',
 };
@@ -37,16 +39,29 @@ export const aboutData = {
 export const projectsData = [
   {
     id: nanoid(),
+    img: 'dm_logo.png',
+    title: 'Dotdash Meredith - Software Developer',
+    info:
+      'At Dotdash Meredith, I design and code features for a highly performant Java and Spring based in-house framework that services over 25 major websites with hundreds of millions of monthly visitors.',
+    info2:
+      'Dotdash Meredith is the largest digital and print publisher in America whose brands include PEOPLE, Better Homes & Gardens, Verywell, The Spruce, Allrecipes, Investopedia, and Southern Living.',
+    url: 'https://www.dotdashmeredith.com',
+    urlLinkText: 'dotdashmeredith.com',
+    highlight: 'Java and Spring',
+    highlightClassName: 'simple-highlight highlight-yellow',
+  },
+  {
+    id: nanoid(),
     img: 'haemonetics_logo.png',
     title: 'Haemonetics - Software Developer',
     info:
       'I worked on the design, coding, testing, and documentation of a variety of medical software using C#, .NET, Java, Angular, PL/SQL, etc. In addition to this, I oversaw and assigned work to a team of developers and lead standups, retrospectives, and sprint planning meetings.',
     info2:
-      "During my time at Haemonetics, I've worked on a variety of applications used by hospitals and medical centers that manage blood transfusions, plasma donations, diagnostics, inventory, and interconnectivity with third party equipment and more.",
+      'During my time at Haemonetics, I\'ve worked on a variety of applications used by hospitals and medical centers that manage blood transfusions, plasma donations, diagnostics, inventory, and interconnectivity with third party equipment and more.',
     url: 'https://www.haemonetics.com/en',
-    urlLinkText: 'Haemonetics.com',
+    urlLinkText: 'haemonetics.com',
     highlight: 'C#, .NET, Java, Angular, PL/SQL',
-    highlightClassName: 'simple-highlight highlight-yellow',
+    highlightClassName: 'simple-highlight highlight-red',
   },
   {
     id: nanoid(),
@@ -56,9 +71,22 @@ export const projectsData = [
       'I was lucky enough to contribute to the coding and testing in C of the bootloader for Ex-Alta2, a satellite being built at the University of Alberta as part of the Canadian Space Agency’s CubeSat Project.',
     info2: '',
     url: 'https://albertasat.ca/',
-    urlLinkText: 'AlbertaSat.com',
+    urlLinkText: 'albertasat.com',
     highlight: 'coding and testing in C',
     highlightClassName: 'simple-highlight highlight-green',
+  },
+  {
+    id: nanoid(),
+    img: 'todo_board.png',
+    title: 'To-Do Board',
+    info:
+      'To-Do Board is a responsive web app I worked on that allows users to remotely collaborative together using shared to-do lists, notes, and pomodoro timers. It was built with Next.js, React, and Firebase.',
+    info2:
+      '',
+    url: 'https://todoboard.ca',
+    urlLinkText: 'todoboard.ca',
+    highlight: 'Next.js, React, and Firebase',
+    highlightClassName: 'simple-highlight highlight-purple',
   },
   {
     id: nanoid(),
@@ -86,7 +114,7 @@ export const projectsData = [
     urlLinkText: 'See Demo',
     repo: 'https://github.com/peterweckend/group-project-cmput404',
     highlight: 'Django',
-    highlightClassName: 'simple-highlight highlight-red',
+    highlightClassName: 'simple-highlight highlight-purple',
   },
 ];
 
