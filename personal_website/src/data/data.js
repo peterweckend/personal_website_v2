@@ -107,13 +107,13 @@ export const projectsData = [
     img: 'connectify.png',
     title: 'Connectify Social Media Platform',
     info:
-      'Created a social media platform using Django as part of a semester-long university group project.',
+      'Created a social media platform using Django, SQL, HTML, CSS, and Heroku as part of a semester-long university group project.',
     info2:
       'This platform included an API that allowed for two-way connectivity with web apps of other groups in the course.',
     url: 'https://youtu.be/thaDP-9Qz3g',
     urlLinkText: 'See Demo',
     repo: 'https://github.com/peterweckend/group-project-cmput404',
-    highlight: 'Django',
+    highlight: 'Django, SQL, HTML, CSS, and Heroku',
     highlightClassName: 'simple-highlight highlight-purple',
   },
 ];
