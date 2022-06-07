@@ -19,7 +19,6 @@ export default () => {
         <meta name="emailvertical" content="TRIPSAVVY"/>
         <meta itemprop="name" content="TripSavvy"/>
         <meta property="article:section" content="TripSavvy"/>
-        <meta property="fb:app_id" content="276744362747954"/>
         <meta property="og:type" content="article"/>
         <meta property="og:site_name" content="TripSavvy"/>
         <meta property="og:url" content="https://www.tripsavvy.com/"/>
