@@ -3,9 +3,28 @@
   margin-top: -15rem;
   padding-top: 15rem;
 
-  background: url('assets/background2.png');
-  background-position: center;
-  background-size: cover;
+  background: linear-gradient(
+    -45deg,
+    lighten($theme-red, 30%),
+    lighten($theme-green, 30%),
+    lighten($theme-yellow, 30%),
+    lighten($theme-indigo, 30%),
+    lighten($theme-purple, 30%)
+  );
+  background-size: 400% 400% !important;
+  animation: background-gradient 30s ease infinite;
+
+  @keyframes background-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
   @include respond(tab-land) {
     margin-top: 0;

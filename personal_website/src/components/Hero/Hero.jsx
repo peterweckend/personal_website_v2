@@ -36,9 +36,9 @@ const Header = () => {
               {title}
             </h1>
             <p className="hero-subtitle">
-              I&apos;m a Vancouver-based full-stack developer with a passion for learning and collaboration.
-              Currently I work at <span className="simple-highlight highlight-yellow">Dotdash Meredith</span>
-              .
+              I&apos;m a Vancouver-based full-stack developer with a passion for learning and
+              collaboration. Currently I work at{' '}
+              <span className="simple-highlight highlight-yellow">Dotdash Meredith</span>.
             </p>
           </Fade>
           <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
