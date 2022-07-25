@@ -13,9 +13,28 @@
   bottom: 0;
   right: 0;
 
-  background: url('assets/background.png');
-  background-position: center;
-  background-size: cover;
+  background: linear-gradient(
+    -45deg,
+    lighten($theme-red, 33%),
+    lighten($theme-green, 33%),
+    lighten($theme-yellow, 33%),
+    lighten($theme-indigo, 33%),
+    lighten($theme-purple, 33%)
+  );
+  background-size: 400% 400% !important;
+  animation: background-gradient 30s ease infinite;
+
+  @keyframes background-gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
   @include respond(phone) {
     margin-top: -15%;

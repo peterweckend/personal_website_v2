@@ -43,7 +43,12 @@ const About = () => {
   );
 
   const universityLink = (
-    <a target="_blank" rel="noopener noreferrer" className="link emphasized" href={universityLinkUrl}>
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      className="link emphasized"
+      href={universityLinkUrl}
+    >
       {universityLinkText}
     </a>
   );
