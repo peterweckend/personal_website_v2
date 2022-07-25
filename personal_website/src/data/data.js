@@ -57,7 +57,7 @@ export const projectsData = [
     info:
       'I worked on the design, coding, testing, and documentation of a variety of medical software using C#, .NET, Java, Angular, PL/SQL, etc. In addition to this, I oversaw and assigned work to a team of developers and lead standups, retrospectives, and sprint planning meetings.',
     info2:
-      'During my time at Haemonetics, I\'ve worked on a variety of applications used by hospitals and medical centers that manage blood transfusions, plasma donations, diagnostics, inventory, and interconnectivity with third party equipment and more.',
+      "During my time at Haemonetics, I've worked on a variety of applications used by hospitals and medical centers that manage blood transfusions, plasma donations, diagnostics, inventory, and interconnectivity with third party equipment and more.",
     url: 'https://www.haemonetics.com/en',
     urlLinkText: 'haemonetics.com',
     highlight: 'C#, .NET, Java, Angular, PL/SQL',
@@ -81,8 +81,7 @@ export const projectsData = [
     title: 'To-Do Board',
     info:
       'To-Do Board is a responsive web app I worked on that allows users to remotely collaborative together using shared to-do lists, notes, and pomodoro timers. It was built with Next.js, React, and Firebase.',
-    info2:
-      '',
+    info2: '',
     url: 'https://todoboard.ca',
     urlLinkText: 'todoboard.ca',
     highlight: 'Next.js, React, and Firebase',
@@ -121,7 +120,7 @@ export const projectsData = [
 export const contactData = {
   cta: "Let's get in touch - send me an email!",
   btn: 'peterweckend@gmail.com',
-  email: 'mailto:peterweckend@gmail.com',
+  email: 'peterweckend@gmail.com',
 };
 
 export const footerData = {
